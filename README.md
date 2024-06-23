@@ -10,3 +10,6 @@ Learning about JS callbacks, JS asyncronous, JS promises, and JS async/await.
 
 ### Function Sequence
 JavaScript`s functions are executed in the sequence they are called. Not in the sequence they are defined.
+
+## JS Asynchronous
+* Functions running in **parallel** with other functions are called **asynchronous**.
