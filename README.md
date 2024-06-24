@@ -43,3 +43,15 @@ The Promise object supports two properties: **_state_** and **_result_**.
 ! You cannot access the Promise properties state and result.
 
 ! You must use a Promise method to handle promises.
+
+## JS Async
+**Async** and **Await** make promises easier to write.
+
+### Async Syntax
+The keyword `async` before a function makes the function return a promise.
+
+### Await Syntax
+The `await` keyword can only be used inside an `async` function.
+```javascript
+let value = await promise;
+```
