@@ -1,15 +1,21 @@
-let myPromise = new promise(function (myResolve, myReject){
-    // "Producing Code" (May take some time)
+function myFunction(some) {
+    document.getElementById("demo6").innerText = some;
+}
 
-    myResolve(); // When successful
-    myReject(); // When error
+let myPromise = new Promise(function (myResolve, myReject){
+    let x = 0;
+
+    // Some code (try to change x to 5)
+    if (x == 0) {
+        myResolve("OK");
+    } else {
+        myReject("Error");
+    }
 });
-
-// "Consuming Code" (Must wait for a fulfilled promise)
 
 // Here is how to use a Promise:
 myPromise.then(
     // Promise.then() takes two arguments, a callback for success and another for failure.
-    function (value) { /* code if successful */ },
-    function (error) { /* code if some error */ }
+    function (value) { myFunction(value) },
+    function (error) { myFunction(error) }
 );
